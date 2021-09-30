@@ -159,7 +159,7 @@
                         "name": "Authorization",
                         "in": "header",
                         "description": "Authorization",
-						"default":"Bearer tA24AWTxrAZOm0G5nGIUKq8tJyGW",
+						"default":"",
                         "required": true,
                         "type": "string"
                     },
@@ -2341,14 +2341,22 @@
                "application/json"
             ],
             "parameters":[
-			{
+               {
+                  "name": "Content-Type",
+                  "in": "header",
+                  "description": "Content-Type",
+                  "default":"application/json",
+                  "required": true,
+                  "type": "string"
+               },
+			   {
                         "name": "Authorization",
                         "in": "header",
                         "description": "Authorization",
-						"default":"6a2e6e39-b8b1-45ed-9904-dced1f65b29b",
+						"default":"",
                         "required": true,
                         "type": "string"
-                    },
+               },
                {
                   "in":"body",
                   "name":"paymentCommand",
